@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>学生登录</title>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body>
+<table>
+    <tr>
+        <td>账号</td>
+        <td><label>
+            <input id="username" type="text" name="username"/>
+        </label></td>
+    </tr>
+    <tr>
+        <td>密码</td>
+        <td><label>
+            <input id="password" type="password" name="password"/>
+        </label></td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <!--<a href="toLogin.do">登录</a>-->
+            <button type="button" id="login">登录</button>
+        </td>
+    </tr>
+</table>
+</body>
+<script>
+
+    // $("#login").click(function () {
+    //     var username = $("#username").val();
+    //     var password = $("#password").val();
+    //     $.ajax({
+    //         type: "post",
+    //         url: "login.do?",
+    //         data: {
+    //             username: username,
+    //             password: password
+    //         },
+    //         dataType: "json",
+    //         success: function (data, textStatus, request) {
+    //             if (data.code === 200) {
+    //                 console.log(data);
+    //                 var token = request.getResponseHeader("token");
+    //                 console.log(token);
+    //                 sessionStorage.setItem("token", token);
+    //                 console.log("token:" + sessionStorage.getItem("token"));
+    //                 // top.window.location.href = "/WEN-INF/html/index.html";
+    //             } else {
+    //                 console.log(data)
+    //             }
+    //         },
+    //         error: function (jqXHR) {
+    //             alert("发生错误：" + jqXHR.status);
+    //         }
+    //     });
+    // });
+
+</script>
+</html>

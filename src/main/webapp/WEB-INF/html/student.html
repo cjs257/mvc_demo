@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>学生信息</title>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body>
+<button type="button" id="query">查询</button>
+<table id="stu" border="1" cellpadding="1" cellspacing="0">
+    <tr align="center">
+        <td>序号</td>
+        <td>学号</td>
+        <td>姓名</td>
+        <td>班主任</td>
+    </tr>
+</table>
+</body>
+<script>
+
+    // $("#query").click(function () {
+    //     var token = "";
+    //     if (sessionStorage.getItem("token") != null) {
+    //         token = sessionStorage.getItem("token");
+    //     }
+    //     console.log("获取的token：" + token);
+    //     $.ajax({
+    //         type: "get",
+    //         url: "selectAll.do",
+    //         dataType: "json",
+    //         cache: false,
+    //         headers: {
+    //             "token": token
+    //         },
+    //         success: function (data) {
+    //             console.log(data);
+    //             if (data.code === 200) {
+    //                 var tbody = "";
+    //                 var stuData = data.data;
+    //                 for (var i = 0, l = stuData.length; i < l; i++) {
+    //                     var trs = "";
+    //                     trs += "<tr align=\"center\"><td>" + stuData[i].stuId + "</td> <td>" + stuData[i].stuNo +
+    //                         "</td><td>" + stuData[i].stuName + "</td><td>" + stuData[i].tecId +
+    //                         "</td></tr>";
+    //                     tbody += trs;
+    //                 }
+    //                 $("#stu").append(tbody)
+    //             } else {
+    //                 console.log(data.code)
+    //             }
+    //         },
+    //         error: function (jqXHR) {
+    //             alert("发生错误：" + jqXHR.status);
+    //         }
+    //     });
+    // })
+
+</script>
+</html>
